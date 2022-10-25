@@ -15,6 +15,8 @@ if (spanRef.textContent === "") {
 
 inputRef.addEventListener("input", onInput);
 
+
+
 // ===================================
 
 // const inputRef = document.querySelector('#name-input');

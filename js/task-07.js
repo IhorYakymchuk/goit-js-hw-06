@@ -3,9 +3,12 @@ const spanRef = document.querySelector('#text');
 
 inputRef.addEventListener('input', onChangeInput);
 
-function onChangeInput() {
-    spanRef.style.fontSize = `${inputRef.value}px`;
+function onChangeInput(event) {
+  spanRef.style.fontSize = `${event.currentTarget.value}px`
 }
+
+
+
 
 // =====================================
 // const inputRef  = document.querySelector('#font-size-control');
@@ -15,12 +18,12 @@ function onChangeInput() {
 
 /**
   |============================
-  | ЯК КРАЩЕ?????
+  | альтернативний варіант
   |============================
 */
-// function onChangeInput(event) {
-//     spanRef.style.fontSize = `${event.currentTarget.value}px`
 
+// function onChangeInput() {
+//     spanRef.style.fontSize = `${inputRef.value}px`;
 // }
 
  

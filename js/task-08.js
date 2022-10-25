@@ -8,11 +8,14 @@ formRef.addEventListener("submit", (event) => {
   } = event.currentTarget;
    
   if (email.value === "" || password.value === "") {
-     alert("Всі поля повинні бути заповненні!!!");
+    return alert("Всі поля повинні бути заповненні!!!");
+    
   } 
    console.log(`Login: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 });
+
+
 
 
 // ===============https://www.edu.goit.global/uk/learn/2683518/2294/2300/textbook=====================
@@ -26,3 +29,4 @@ formRef.addEventListener("submit", (event) => {
 //   } = event.currentTarget;
 //   console.log(username.value, password.value);
 // });
+

@@ -14,7 +14,7 @@ const ingredientsLi = document.createElement("li")
 ingredientsLi.textContent = ingredient;
   ingredientsLi.classList.add("item");
   
-return ingredientsLi
+  return ingredientsLi;
 })
 itemRef.append(...elements);
 
